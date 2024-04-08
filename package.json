@@ -15,8 +15,11 @@
     "type": "git",
     "url": "https://github.com/vitorrloureiro/simple-event-target"
   },
+  "files": [
+    "./dist"
+  ],
   "main": "./dist/simple-event-target.umd.cjs",
-  "module": ".dist/simple-event-target.js",
+  "module": "./dist/simple-event-target.js",
   "exports": {
     ".": {
       "import": "./dist/simple-event-target.js",
