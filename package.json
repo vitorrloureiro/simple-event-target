@@ -1,0 +1,41 @@
+{
+  "name": "vrls-simple-event-target",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "A lightweight TypeScript library for creating type-safe event-driven classes with an API mirroring the browser's EventListener. Offers streamlined event management with no dependencies.",
+  "license": "MIT",
+  "keywords": [
+    "event",
+    "listener",
+    "target",
+    "emitter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vitorrloureiro/simple-event-target"
+  },
+  "main": "./dist/simple-event-target.umd.cjs",
+  "module": ".dist/simple-event-target.js",
+  "exports": {
+    ".": {
+      "import": "./dist/simple-event-target.js",
+      "require": "./dist/simple-event-target.umd.cjs",
+      "types": "./dist/main.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.4.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.8.1",
+    "vitest": "^1.4.0"
+  }
+}
