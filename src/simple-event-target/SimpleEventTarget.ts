@@ -23,6 +23,12 @@ export class SimpleEventTarget<T extends EventMap> {
   dispatchEvent<U extends keyof T>(event: U, ...args: Parameters<T[U]>) {
     const eventListenersSet = this.#events.get(event);
 
-    eventListenersSet?.forEach((listener) => listener(...args));
+    eventListenersSet?.forEach((listener) => {
+      try {
+        listener(...args);
+      } catch (error) {
+        console.error(error);
+      }
+    });
   }
 }
