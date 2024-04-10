@@ -12,7 +12,9 @@ export default defineConfig({
     },
   },
   test: {
-    root: "./src/simple-event-target",
+    coverage: {
+      include: ["src/simple-event-target/**/*.{js,ts,jsx,tsx}"],
+    },
   },
   plugins: [dts({ exclude: "**/*.test.*" })],
 });
