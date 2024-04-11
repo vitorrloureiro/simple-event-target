@@ -7,8 +7,8 @@ export default defineConfig({
     minify: false,
     lib: {
       entry: resolve(__dirname, "src/main.ts"),
-      name: "Simple Event Target",
-      fileName: "simple-event-target",
+      name: "vrls-simple-event-target",
+      fileName: "vrls-simple-event-target",
     },
   },
   test: {

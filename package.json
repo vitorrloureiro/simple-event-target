@@ -18,12 +18,12 @@
   "files": [
     "./dist"
   ],
-  "main": "./dist/simple-event-target.umd.cjs",
-  "module": "./dist/simple-event-target.js",
+  "main": "./dist/vrls-simple-event-target.umd.cjs",
+  "module": "./dist/vrls-simple-event-target.js",
   "exports": {
     ".": {
-      "import": "./dist/simple-event-target.js",
-      "require": "./dist/simple-event-target.umd.cjs",
+      "import": "./dist/vrls-simple-event-target.js",
+      "require": "./dist/vrls-simple-event-target.umd.cjs",
       "types": "./dist/main.d.ts"
     }
   },
