@@ -13,6 +13,9 @@ describe("SimpleEventTarget", () => {
   const CLICK_MESSAGE = "Test click";
 
   class MockEventEmitter extends SimpleEventTarget<CustomEventMapper> {
+    constructor() {
+      super(["click", "message"]);
+    }
     sendMessage() {
       this.dispatchEvent("message", TEST_MESSAGE);
     }
